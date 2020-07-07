@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Router, Route, Switch } from 'react-router-dom'
 import Welcome from './components/Welcome'
 import SignUp from './components/SignUp'
@@ -8,10 +8,10 @@ import EmployeeRegForm from './components/Employee/EmployeeRegForm'
 import EmployeeProfile from './components/Employee/EmployeeProfile'
 import EmployerProfile from './components/Employer/EmployerProfile'
 import EmployerList from './components/Employer/EmployerList'
-import EmployeeList from './components/Employee/EmployeeList';
+import EmployeeList from './components/Employee/EmployeeList'
 import history from './utils/history'
 import PrivateRoute from './components/PrivateRoute'
-import Footer from './components/Footer';
+import Footer from './components/Footer'
 
 
 function App() {
@@ -29,10 +29,10 @@ function App() {
           <Route path='/signin' component={SignIn} />
           <Route path='/' component={Welcome} />
         </Switch>
-        <Footer/>
+        <Footer />
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

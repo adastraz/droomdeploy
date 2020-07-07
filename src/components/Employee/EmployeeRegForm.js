@@ -26,6 +26,7 @@ const EmployeeRegForm = props => {
         console.log("User to submit: ", employeeUser)
         props.newEmployee({...employeeUser, ...props.location.state}) 
     }
+
     useEffect (() => {
         if(props.error != null){
             props.clearError()

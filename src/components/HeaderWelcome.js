@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState} from "react"
 import {
     Collapse,
     Navbar,
@@ -7,14 +7,13 @@ import {
     Nav,
     NavItem,
     NavLink,
-  } from 'reactstrap';
- import {Link} from 'react-router-dom'
+  } from 'reactstrap'
 
 
 function HeaderWelcome() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => setIsOpen(!isOpen)
 
   return (
     <div>
@@ -23,7 +22,7 @@ function HeaderWelcome() {
         <NavbarToggler className="hamburger" onClick={toggle} />
       </Navbar>
     </div>
-  );
+  )
 }
 
-export default HeaderWelcome;
+export default HeaderWelcome

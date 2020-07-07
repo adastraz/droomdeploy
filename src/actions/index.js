@@ -1,11 +1,11 @@
 import axios from 'axios'
 import history from '../utils/history'
 import axiosWithAuth from '../utils/axiosWithAuth'
-export const FETCHING_START = 'FETCHING_START';
-export const FETCHING_ERROR = 'FETCHING_ERROR';
-export const EMPLOYEE = 'EMPLOYEE';
-export const LOGIN = 'LOGIN';
-export const EMPLOYER = 'EMPLOYER';
+export const FETCHING_START = 'FETCHING_START'
+export const FETCHING_ERROR = 'FETCHING_ERROR'
+export const EMPLOYEE = 'EMPLOYEE'
+export const LOGIN = 'LOGIN'
+export const EMPLOYER = 'EMPLOYER'
 export const FETCHING_COMPANYARRAY_SUCCESS = 'FETCHING_COMPANYARRAY_SUCCESS'
 export const FETCHING_USERARRAY_SUCCESS = 'FETCHING_USERARRAY_SUCCESS'
 export const CLEAR_ERROR = 'CLEAR_ERROR'

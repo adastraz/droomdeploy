@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { newEmployer, clearError } from '../../actions'
 import HeaderWelcome from '../HeaderWelcome'
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap'
+import { Button, Form, Label, Input } from 'reactstrap'
 
 const EmployerRegForm = props => {
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react"
 import { connect } from 'react-redux'
 import { login } from '../actions'
 import { Link } from 'react-router-dom'
@@ -10,21 +10,19 @@ function SignIn(props) {
     const [user, setUser] = useState({
         username: '',
         password: ''
-    });
+    })
 
-    //handle any changes made to inputs username/password in the form
     const handleChanges = event => {
         setUser({
             ...user,
             [event.target.name]: event.target.value
-        });
-    };
+        })
+    }
 
     //on submit
     const submitForm = e => {
         e.preventDefault()
         props.login(user)
-        //react 2 handle posting/etc
     }
 
     return (
@@ -71,7 +69,7 @@ function SignIn(props) {
             </div>
         </div>
     </div>
-    );
+    )
 }
 
 const mapStateToProps = state => {
@@ -82,4 +80,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, {login})(SignIn)
+export default connect(mapStateToProps, { login })(SignIn)

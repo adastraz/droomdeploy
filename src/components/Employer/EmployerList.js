@@ -11,8 +11,8 @@ import {
 import EmployerHeader from './EmployerHeader'
 
 const EmployerList = props => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [animating, setAnimating] = useState(false);
+    const [activeIndex, setActiveIndex] = useState(0)
+    const [animating, setAnimating] = useState(false)
 
     const next = () => {
         if (animating) return;
@@ -40,13 +40,15 @@ const EmployerList = props => {
             >
                 <EmployeeCard item={item} />
             </CarouselItem>
-        );
-      });
+        )
+    })
 
     useEffect(() => {
         props.fetchUserArray()
     },[])
+
     console.log(props.array)
+
     return(
         <>
             <EmployerHeader />
@@ -74,4 +76,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, {fetchUserArray})(EmployerList)
+export default connect(mapStateToProps, { fetchUserArray })(EmployerList)

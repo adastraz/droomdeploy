@@ -113,12 +113,12 @@ const EmployerProfile = props => {
     )
 }
 
- const mapStateToProps = state => {
-     return {
-         isLoading: state.isLoading,
-         user: state.user,
-         error: state.error
-     }
- }
+const mapStateToProps = state => {
+    return {
+        isLoading: state.isLoading,
+        user: state.user,
+        error: state.error
+    }
+}
 
- export default connect(mapStateToProps, {fetchCompany, editCompany, deleteCompany})(EmployerProfile)
+export default connect(mapStateToProps, { fetchCompany, editCompany, deleteCompany })(EmployerProfile)

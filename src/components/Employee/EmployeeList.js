@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react'
 import {fetchCompanyArray} from '../../actions'
 import {connect} from 'react-redux'
 import EmployerCard from '../Employer/EmployerCard'
@@ -7,7 +7,7 @@ import {
     CarouselItem,
     CarouselControl,
     CarouselIndicators
-  } from 'reactstrap';
+} from 'reactstrap'
 import EmployeeHeader from './EmployeeHeader'
 
 const EmployeeList = props => {
@@ -41,8 +41,8 @@ const EmployeeList = props => {
             >
                 <EmployerCard item={item} />
             </CarouselItem>
-        );
-    });
+        )
+    })
     
     useEffect(() => {
         props.fetchCompanyArray()
@@ -78,4 +78,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, {fetchCompanyArray})(EmployeeList)
+export default connect(mapStateToProps, { fetchCompanyArray })(EmployeeList)
